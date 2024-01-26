@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1> How to access attribute value in HTML and css  -->
+    <div bookingId="1" id="booking"></div>
+    <div id="status" data-bookingStatus="booked"></div>
+
+    <!-- 2> HOW to use relative url -->
+    <!-- if available in same domain or project folder -->
+    <img width="500px" height="300px" src="./images/IM-4176.png"/>
+
+    <!-- How to use Absolute url -->
+    <!-- if hosted on another domain -->
+    <img width="500px" height="300px" src="C:\Users\ajay.awachar\Pictures\Screenshots/IM-4176.png" />
+
+    <!-- How to display video on web page -->
+    <div style="width: 600px;height: 300px;">
+        <video
+              width="100%"
+              height="100%"
+              controls
+            >
+              <!-- <source
+                src="https://static.udchalo.com/fauji_family/common/videos/Fauji Family - An udChalo initiative for all Fauji Family members.mp4"
+                type="video/mp4"
+              /> -->
+              <source
+                src="./Video/video.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+    </div>
+
+    <!-- How to integrate audio -->
+    <audio controls>
+        <source src="./Audio/audio.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+        const ele = document.getElementById('booking');
+        const id = ele.getAttribute('bookingId');
+        console.log(id);
+
+        const ele2 = document.getElementById('status');
+        // data attribute convert attribute name into lower case
+        const status = ele2.dataset.bookingstatus;
+        console.log(status);
+    </script>
+</body>
+</html>

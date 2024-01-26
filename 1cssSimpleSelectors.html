@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #ou {
+            color: bisque;
+        }
+
+        .ou {
+            color: blueviolet;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        h3, h4 {
+            font-size: 12px;
+        }
+    
+        p.ele {
+            color: pink;
+        }
+
+        /* this css take highest priority  */
+        p.center {
+            text-align: center;
+            color: red;
+        }
+        
+        .larg {
+            font-size: larger;
+            color: green;
+        }
+
+        /* class is on secound priority */
+        .cls {
+            color: green;
+        }
+        /* element is on third priority */
+        p {
+            color: red;
+        }
+        /* id having first priority */
+        #ytr {
+            color: blue;
+        }
+    </style>
+    <head>
+
+    </head>
+    <body>
+        <!-- example of css Id selector -->
+        <h1 id="ou">This is Id selector Element</h1>
+        <h1 id="ou">This is Another Id selector</h1>
+
+        <!-- css class selector -->
+        <h1 class="ou">This is class selector</h1>
+        <h1 class="ou">This is Another class selector</h1>
+
+        <!-- css element selector -->
+        <h2>This is Element selector</h2>
+
+        <!-- select multiple element at once -->
+        <h3>This is H3 Element</h3>
+        <h4>This is H4 Element</h4>
+
+        <!-- css elemnt with class selector -->
+        <p>this is paragrapg</p>
+        <p class="ele">this is element with class selector</p>
+        <p class="center larg">Element can have more than one class</p>
+
+        <p class="cls" id="ytr">this is example of priority</p>
+    </body>
+</html>

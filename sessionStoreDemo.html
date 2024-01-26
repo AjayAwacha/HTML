@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- session store keep in memory when tab is open event we redirect to another page -->
+    <button onclick="addSession()">add Session Key</button>
+    <a href="www.google.com" >Click</a>
+    <script>
+        function addSession() {
+            sessionStorage.setItem('sessKey', 'Val420');
+            console.log('Session stored in browser');
+        }
+    </script>
+</body>
+</html>

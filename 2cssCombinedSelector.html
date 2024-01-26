@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /* decandant selector  */
+        /* select all the paragraph inside div even it present in nested level */
+        div.decendant p {
+            color: pink;
+        }
+
+        /* child selector */
+        /* select all h6 ement which direct parent is div with class child_demo */
+        div.child_demo > h6 {
+            color: red;
+        }
+
+        /* adjacent sibling selector */
+        /* select p which come directly after div with class adjavcent_demo */
+        div.adjavcent_demo + p {
+            color: blue;
+        }
+
+        /* general sibling selector */
+        /* select all p comes after div with class general_sibling */
+        div.general_sibling ~ p {
+            color: green;
+        }
+    </style>
+    <body>
+        <!-- decendant selector -->
+        <div class="decendant">
+            <p>this is first paragrapg</p>
+            <h1>this is heading with <p>paragraph</p></h1>
+        </div>
+
+        <!-- child selector -->
+        <div class="child_demo">
+            <p>this is test paragraph</p>
+            <h6>this is child paragraph</h6>
+            <h6>this is secound paragrapg</h6>
+            <section><h6>this paragraph is not directlly child</h6></section>
+        </div>
+
+        <!-- adjacent sibling selector -->
+        <div class="adjavcent_demo"></div>
+        <!-- <h3>Test Heading</h3> -->
+        <p>Directly Adjacent element</p>
+        <p>Adjacent element but not directlly</p>
+
+        <!-- general sibling selector -->
+        <div class="general_sibling"></div>
+        <p>Directly Adjacent element</p>
+        <p>Adjacent element but not directlly</p>
+        <h1>Brak for General sibling selector</h1>
+        <p>Adjacent element but not directlly</p>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .static {
+            position: static;
+            width: 500px;
+            background-color: aquamarine;
+            right: 0px;
+            top: 0px;
+        }
+        .relative {
+            position: relative;
+            width: 500px;
+            background: pink;
+            top: 10px;
+            left: 50px;
+        }
+        .absolute {
+            position: absolute;
+            width: 500px;
+            background: gray;
+            top: 0px;
+            right: 0px;
+        }
+
+        .nearest-relative {
+            position: relative;
+            background: aqua;
+            width: 800px;
+            height: 100px;
+        }
+
+        .fixed {
+            position: fixed;
+            background: pink;
+            width: 500px;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .sticky {
+            position: sticky;
+            background: pink;
+            width: 500px;
+            top:0px;
+        }
+    </style>
+    <body style="height: 1111px;">
+        <div class="static">This is Static Div</div>
+        <div class="relative">This is Relative Div</div>
+        <div class="absolute">This is Absolute Div</div>
+        <div>General Div</div>
+        <div class="nearest-relative">
+            This is Nearest Relative Position Div
+            <div class="absolute">This is Absolute Div</div>
+        </div>
+        <div class="fixed">This is Fixed Div</div>
+        <div class="sticky">This is Sticky Div</div>
+    </body>
+</html>
